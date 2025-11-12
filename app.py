@@ -6,9 +6,9 @@ from datetime import date
 
 st.set_page_config(page_title="Viabrhaman Travel Agency", page_icon="🌍", layout="wide")
 
-# ✅ Load MongoDB connection string from Streamlit Secrets
-# Add this in Streamlit Cloud > Settings > Secrets:
-# MONGO_URI = "mongodb+srv://<username>:<password>@cluster0.mongodb.net/viabrhaman_db"
+ ✅ Load MongoDB connection string from Streamlit Secrets
+ Add this in Streamlit Cloud > Settings > Secrets:
+ MONGO_URI = "mongodb+srv://<username>:<password>@cluster0.mongodb.net/viabrhaman_db"
 try:
     MONGO_URI = st.secrets["MONGO_URI"]
 except KeyError:
@@ -155,5 +155,6 @@ elif menu == "User Query":
                 st.success("✅ Your query has been submitted successfully!")
             else:
                 st.warning("⚠️ Please fill all required fields (Name, Email, and Query).")
+
 
 
