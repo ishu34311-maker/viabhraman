@@ -1,5 +1,5 @@
 import streamlit as st
-#import pymongo
+import pymongo
 from datetime import date
 
 # ---------------------- CONFIGURATION ----------------------
@@ -155,4 +155,5 @@ elif menu == "User Query":
                 st.success("✅ Your query has been submitted successfully!")
             else:
                 st.warning("⚠️ Please fill all required fields (Name, Email, and Query).")
+
 
